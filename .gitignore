@@ -1,0 +1,12 @@
+# Tell Git to ignore these folders:
+
+node_modules/
+audio/wprbxmas_songs/
+audio/wprbxmas_stories/
+audio/wprbxmas_misc/
+
+# Tell Git to ignore these files:
+
+package-lock.json
+package.json
+wetransfer-ac7d5b.zip
