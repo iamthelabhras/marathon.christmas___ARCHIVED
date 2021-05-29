@@ -218,6 +218,13 @@ div {
 
 html {
   scroll-behavior: smooth;
+  /* Current scroll-padding-top value (210px) is the product 
+        of trial & error; it is *not* programatically linked to 
+        the title cards each Christmas light bulb scrolls to.  
+        This will need to be addressed / changed in the future, probably
+        during the code review / refactor I plan on undertaking in the three
+        months (Sept-Nov 2021) leading up to the 31st annual WPRBXmas marathon. */
+  scroll-padding-top: 210px;
 }
 
 body {
