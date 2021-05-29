@@ -1710,7 +1710,14 @@ footer {
 }
 
 div#title_card--footer {
+  gap: 15px;
+  justify-content: space-around;
   padding: 25px;
+}
+
+div#title_card--footer > div {
+  justify-content: center;
+  align-items: center;
 }
 
 /* Display Bouncing Santa on mobile only. */
@@ -1727,6 +1734,7 @@ div#title_card--footer audio {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
   -webkit-border-radius: 7px 7px 7px 7px;
+  margin-bottom: 5px;
   border-radius: 7px 7px 7px 7px;
   width: 175px;
   height: 25px;
@@ -1760,12 +1768,29 @@ div#title_card--footer audio:active {
   }
 }
 
-img.img_copyleft {
-  width: 25px;
-  height: 25;
+div#copyleft_and_attribution {
+  justify-content: center;
+  align-items: center;
 }
 
-span.copyleft {
+div#copyleft {
+  display: grid;
+  place-items: center;
+  margin-bottom: 5px;
+}
+
+div#copyleft ~ span {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+img.img_copyleft {
+  width: 15px;
+  height: 15px;
 }
 
 p.spotify_disclaimer {
@@ -2269,7 +2294,6 @@ span.typeform_button {
   }
 
   footer div {
-    margin-top: 20px;
     text-align: center;
   }
 
@@ -2442,20 +2466,6 @@ span.typeform_button {
 
 /* #region MEDIA QUERIES - Laptop (13" Screens) */
 
-@media screen and (min-width: 0px) and (max-width: 1130px) {
-  /* Change Flex layout of Submissions to center justify 'Background' &
-    'Guidelines & Rules' text boxes on wrap.  This prevents
-    the initial layout of space-around justify from creating an
-    unsightly "indent".  */
-  div#title_card--wprbxmas_submissions
-    h2
-    > div.mc_box-change_flex_direction-column,
-  div#submissions-background_image_and_guidelines_container,
-  div#submissions_image_and_caption_container {
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   /* MEDIA QUERIES - Laptop Show & Hides */
 
@@ -2484,6 +2494,33 @@ span.typeform_button {
     column-gap: 100px;
   }
 }
+/* #endregion */
+
+/* #region MEDIA QUERIES - Custom */
+
+@media screen and (min-width: 0px) and (max-width: 1130px) {
+  /* Change Flex layout of Submissions to center justify 'Background' &
+    'Guidelines & Rules' text boxes on wrap.  This prevents
+    the initial layout of space-around justify from creating an
+    unsightly "indent".  */
+  div#title_card--wprbxmas_submissions
+    h2
+    > div.mc_box-change_flex_direction-column,
+  div#submissions-background_image_and_guidelines_container,
+  div#submissions_image_and_caption_container {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 675px) {
+  div#footer_links {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 25px;
+    font-size: 12px;
+  }
+}
+
 /* #endregion */
 
 /* #region MEDIA QUERIES - Browsers */
