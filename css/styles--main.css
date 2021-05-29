@@ -1083,7 +1083,15 @@ td.ends {
 
 /* #region WPRB Submissions Card */
 
-div#submissions-backgroun_image_and_guidelines_container {
+div#title_card--wprbxmas_submissions
+  h2
+  > div.mc_box-change_flex_direction-column,
+div#submissions-background_image_and_guidelines_container,
+div#submissions_image_and_caption_container {
+  justify-content: space-around;
+}
+
+div#submissions-background_image_and_guidelines_container {
 }
 
 div#submissions_text-background_info {
@@ -2426,6 +2434,20 @@ span.typeform_button {
 /* #endregion */
 
 /* #region MEDIA QUERIES - Laptop (13" Screens) */
+
+@media screen and (min-width: 0px) and (max-width: 1130px) {
+  /* Change Flex layout of Submissions to center justify 'Background' &
+    'Guidelines & Rules' text boxes on wrap.  This prevents
+    the initial layout of space-around justify from creating an
+    unsightly "indent".  */
+  div#title_card--wprbxmas_submissions
+    h2
+    > div.mc_box-change_flex_direction-column,
+  div#submissions-background_image_and_guidelines_container,
+  div#submissions_image_and_caption_container {
+    justify-content: center;
+  }
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   /* MEDIA QUERIES - Laptop Show & Hides */
