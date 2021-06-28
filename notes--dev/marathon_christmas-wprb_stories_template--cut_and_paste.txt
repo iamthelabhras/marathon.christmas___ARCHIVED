@@ -79,6 +79,8 @@
           <img
             src="../images/cassette_tape-white.png"
             class="cassette_tape_mobile"
+	alt=“A cassette tape.”
+loading=“lazy”
           />
         </div>
         <div class="flex-container-column wprb_xmas_story--story_data">
