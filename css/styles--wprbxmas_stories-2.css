@@ -904,6 +904,15 @@ span.story_author {
   font-size: var(--story_author-font_size);
 }
 
+span.social_media_divider {
+  display: inline-block;
+  width: 5%;
+  height: 2px;
+  margin: 5px 5px;
+  background: black;
+  transform: rotate(90deg);
+}
+
 span.story_title {
   text-align: center;
   font-size: var(--story_title-font_size);
