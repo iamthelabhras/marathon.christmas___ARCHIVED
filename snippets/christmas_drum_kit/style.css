@@ -1,0 +1,82 @@
+:root {
+  --dkblue: #1b2a59;
+  --ltblue: #0442bf;
+  --tan: #bf7534;
+  --red: #bf0404;
+  --white: #f2f2f2;
+  --green: #0d590a;
+  --patternsize: 100px;
+}
+
+html {
+  background: url("./background-1.png") bottom center;
+  background-size: cover;
+  background-color: #ff7878;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container--keys {
+  display: grid;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.keys {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.2s ease;
+  width: 10rem;
+  text-align: center;
+  color: red;
+  background: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 0.2rem black;
+}
+
+.key:nth-child(even) {
+  transform: rotate(10deg);
+}
+
+.key:nth-child(odd) {
+  transform: rotate(-10deg);
+}
+
+.playing {
+  transform: scale(1.2) !important;
+  border-color: green;
+  box-shadow: 0 0 1rem white;
+}
+
+kbd {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.sound {
+  display: block;
+  margin-top: 10px;
+  padding-top: 5px;
+  background-color: black;
+  font-size: 1.25rem;
+  color: white;
+}
