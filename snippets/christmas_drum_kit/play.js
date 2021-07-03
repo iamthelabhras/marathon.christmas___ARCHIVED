@@ -14,6 +14,10 @@ function playSound(e) {
         key.classList.add('playing');
 }
 
+function clickLetterBlock () { 
+    alert('Press the key listed in the pink bar to hear a WPRBXmas sound!');
+}
+
 function removeTransition(e) {
     const activeKey = document.querySelector(`.key[data-key="${e.srcElement.attributes[0].nodeValue}"]`); // Use data within the audio element's event object data to select the appropriate div.
     activeKey.classList.remove('playing'); 
@@ -24,4 +28,5 @@ function removeTransition(e) {
 
 sounds.forEach(sound => sound.addEventListener('ended', removeTransition)); // Restyle letter block when Christmas sound effect finishes playing. 
 window.addEventListener('keydown', playSound); // Play Christmas sound effect when appropriate key is struck. 
+keys.forEach(key => key.addEventListener('click', clickLetterBlock));
 
