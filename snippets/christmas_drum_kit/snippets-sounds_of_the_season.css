@@ -1,16 +1,3 @@
-html {
-  background: url("./background-1.png") bottom center;
-  background-size: cover;
-  background-color: #ff7878;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
 .container--keys {
   display: flex;
   justify-content: center;
@@ -28,17 +15,20 @@ html {
 }
 
 .key {
-  border: 0.4rem solid black;
+  border: 0.4rem solid var(--santa_white);
+  border: 0.4rem solid var(--body_bg-lighter);
   border-radius: 0.5rem;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-family: "Xmas Sweater", sans-serif;
+  font-size: 2.25rem;
   padding: 1rem 0.5rem;
   transition: all 0.2s ease;
   width: 10rem;
   text-align: center;
-  color: red;
-  background: rgba(255, 255, 255, 0.8);
-  text-shadow: 0 0 0.2rem black;
+  color: var(--santa_yellow);
+  background: var(--body_bg);
+  text-shadow: 0 0 0.1rem var(--black);
+  box-shadow: 2px 2px 1px var(--box_shadow-primary);
 }
 
 .key:nth-child(even) {
@@ -51,8 +41,8 @@ html {
 
 .playing {
   transform: scale(1.2) !important;
-  border-color: green;
-  box-shadow: 0 0 1rem white;
+  border-color: var(--santa_yellow);
+  box-shadow: 0 0 1rem var(--santa_white);
 }
 
 kbd {
@@ -65,18 +55,16 @@ kbd {
   display: block;
   margin-top: 10px;
   padding-top: 5px;
-  background-color: black;
+  background-color: var(--santa_red);
+  font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
-  color: white;
+  color: var(--santa_white);
 }
 
-/* #region Media Queries -- ALL */
-
-/* #region Media Queries -- Tablets */
-
-@media screen and (min-width: 376px) and (min-width: 768px) {
+@media screen and (max-width: 671px) {
+  /* Unrotate letter blocks on smaller screens. */
+  .key:nth-child(even),
+  .key:nth-child(odd) {
+    transform: rotate(0deg);
+  }
 }
-
-/* #endregion Media Queries - Tabllets */
-
-/* #endregion -- Media Queries -- ALL */
