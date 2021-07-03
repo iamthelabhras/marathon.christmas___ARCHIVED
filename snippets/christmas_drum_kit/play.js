@@ -8,19 +8,20 @@ const sounds = document.querySelectorAll('audio');
 function playSound(e) {
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-        if(!audio) return; // stop the function from running altogether 
-        audio.currentTime = 0; // rewind to start
+        if(!audio) return; // stop function from running if key struck is not listed on letter block. 
+        audio.currentTime = 0; // rewind to Christmas sound effect to start whenever key is struck. 
         audio.play();
         key.classList.add('playing');
 }
 
 function removeTransition(e) {
-    const activeKey = document.querySelector(`.key[data-key="${e.srcElement.attributes[0].nodeValue}"]`);
-    activeKey.classList.remove('playing');
+    const activeKey = document.querySelector(`.key[data-key="${e.srcElement.attributes[0].nodeValue}"]`); // Use data within the audio element's event object data to select the appropriate div.
+    activeKey.classList.remove('playing'); 
 }
 
-//    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+// Add event listeners
 
-sounds.forEach(sound => sound.addEventListener('ended', removeTransition));
-window.addEventListener('keydown', playSound); 
+
+sounds.forEach(sound => sound.addEventListener('ended', removeTransition)); // Restyle letter block when Christmas sound effect finishes playing. 
+window.addEventListener('keydown', playSound); // Play Christmas sound effect when appropriate key is struck. 
 
