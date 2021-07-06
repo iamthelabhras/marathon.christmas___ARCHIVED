@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
 @font-face {
-  font-family: "candy_cane_unregisteredRg";
+  font-family: "Candy Cane";
   src: url("../fonts/candycaneunregistered-gq3y-webfont.woff2") format("woff2"),
     url("../fonts/candycaneunregistered-gq3y-webfont.woff") format("woff");
   font-weight: normal;
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: "xmas_sweater_stitchregular";
+  font-family: "Xmas Sweater";
   src: url("../fonts/xmassweaterstitch-xxyq-webfont.woff2") format("woff2"),
     url("../fonts/xmassweaterstitch-xxyq-webfont.woff") format("woff");
   font-weight: normal;
@@ -45,7 +45,7 @@
   --story_author-font_size: 1.75rem;
   --story_title-font_size: 1.45rem;
   --story_desc-font_size: 1.15rem;
-  --lyrics-font-Size: 0.75rem;
+  --lyrics_font_size: 0.75rem;
   --loader_bg_color: #fafafa;
   --loader_bg_color: white;
   --loader_bg_color: #1f253c;
@@ -193,11 +193,11 @@ h1 {
 }
 
 h2 {
-  font-family: "xmas_sweater_stitchregular", serif;
+  font-family: "Xmas Sweater", serif;
 }
 
 h3 {
-  font-family: "xmas_sweater_stitchregular";
+  font-family: "Xmas Sweater";
   font-size: 2.25vw;
   margin-top: 0;
   margin-bottom: 0;
@@ -923,6 +923,11 @@ span.story_title_top_margin {
   margin-top: 10px;
 }
 
+span.story_title details {
+  margin: 15px 0px;
+  font-size: 1.25rem;
+}
+
 span.author_pull_up {
   margin-bottom: 0;
 }
@@ -950,16 +955,17 @@ p.band_desc {
 p.perform_desc {
   display: inline-block;
   padding: 15px;
-  font-size: var(--lyrics-font_size);
+  font-size: var(--lyrics_font_size);
   background-color: var(--santa_red_transparent-2);
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ec5395' fill-opacity='0.32'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 p.lyrics {
   display: inline-block;
+  width: 65%;
   padding: 15px;
-  font-size: var(--lyrics-font_size);
-  font-weight: 800;
+  font-size: var(--lyrics_font_size) !important;
+  font-weight: 500;
   background-color: var(--santa_red_transparent-2);
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ec5395' fill-opacity='0.32'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -967,7 +973,7 @@ p.lyrics {
 p.stump {
   display: inline-block;
   padding: 10px;
-  font-size: var(--lyrics-font_size);
+  font-size: var(--lyrics_font_size);
   font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
