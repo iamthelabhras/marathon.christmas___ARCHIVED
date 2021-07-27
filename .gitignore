@@ -5,11 +5,10 @@ audio/wprbxmas_songs/
 audio/wprbxmas_stories/
 audio/wprbxmas_misc/
 node_modules/
+notes--dev/
 
 # Tell Git to ignore these files:
 
 .DS_Store
-package-lock.json
-package.json
 wetransfer-ac7d5b.zip
 
