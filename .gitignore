@@ -4,6 +4,7 @@ dist/
 audio/wprbxmas_songs/
 audio/wprbxmas_stories/
 audio/wprbxmas_misc/
+audit/
 node_modules/
 notes--dev/
 
