@@ -1,12 +1,15 @@
 # Tell Git to ignore these folders:
-
-node_modules/
+.cache/
+dist/
 audio/wprbxmas_songs/
 audio/wprbxmas_stories/
 audio/wprbxmas_misc/
+node_modules/
 
 # Tell Git to ignore these files:
 
+.DS_store
 package-lock.json
 package.json
 wetransfer-ac7d5b.zip
+
