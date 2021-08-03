@@ -1017,7 +1017,6 @@ div#title_card--site_desc {
   display: flex;
   flex-direction: column;
   width: 34.05vw;
-  flex-grow: 0;
 }
 
 p#welcome_to_marathon_christmas {
@@ -1028,14 +1027,13 @@ p#welcome_to_marathon_christmas {
 /* TITLE CARD: Current Marathon Details */
 
 div#title_card--current_marathon_details {
-  /* width: 25%; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 17.025vw;
+  width: 34.05vw;
 }
 
-span.current_marathon_details--years_running {
+.current_marathon_details--years_running {
   font-family: var(--sweater_font_family);
   font-size: 2.75rem;
 }
@@ -1044,15 +1042,44 @@ span#current_marathon_details--years_running--facebook_rsvp {
 }
 
 div#title_card--title_card img.current_marathon_record {
-  align-self: center;
   width: 175px;
   height: 175px;
-  margin-top: 20px;
   transform: scale(0.88) rotate(-20deg);
 }
 
+#countdown_to_wprbxmas {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+#countdown_to_wprbxmas > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 20%;
+  height: 75px;
+}
+
+#countdown_to_wprbxmas > div:last-of-type {
+  margin-right: 0px;
+}
+
+#countdown_to_wprbxmas > div > span:nth-of-type(2) {
+  font-size: 0.85rem;
+}
+
 table.marathon_start_and_end_times {
-  margin-top: -20px;
+  /* margin-top: -20px; */
+  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
