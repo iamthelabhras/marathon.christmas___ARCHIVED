@@ -1,0 +1,99 @@
+.clean_break_on_wrap {
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+/* #region Hacky Utility Classes */
+
+.center {
+  text-align: center;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.important_text {
+  font-weight: 800;
+}
+
+.now_playing {
+  width: 100%;
+  height: 100px;
+  color: white;
+  background: #1f253c;
+}
+
+.dev_border {
+  border: 2px solid blue;
+}
+
+.dev_background {
+  background: orange;
+}
+
+.hide {
+  display: none;
+}
+
+span.no_wrap {
+  white-space: nowrap;
+}
+
+span.typeform_button {
+  justify-self: center;
+}
+
+.unfinished_link {
+  color: #cdcdcd;
+}
+
+/* #endregion */
+
+/* #region Marathon Christmas Flex Box Utility Classes */
+
+.flex_grow_spacer {
+  flex-grow: 1;
+}
+
+.mc_box-change_flex_direction-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mc_box-change_flex_direction-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.mc_box-justify_content-space_around {
+  justify-content: space-around;
+}
+
+.mc_box-justify_content-space_between {
+  justify-content: space-between;
+}
+
+.mc_box-justify_content-space_evenly {
+  justify-content: space-evenly;
+}
+
+.mc_box-justify_content-flex_start {
+  justify-content: flex-start;
+}
+
+.mc_box-justify_content-center {
+  justify-content: center;
+}
+
+.mc_box-align_items-center {
+  align-items: center;
+}
+
+.mc.box-no_flex_wrap {
+  flex-wrap: nowrap;
+}
+
+/* #endregion Marathon Christmas Flex Box Utility Classes */

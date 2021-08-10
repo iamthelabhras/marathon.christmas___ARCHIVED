@@ -1,0 +1,79 @@
+/* #region Jon Solomon's AND Jon Solobot's Tweets Cards */
+
+img.twitter_profile_pic {
+  display: flex;
+  align-self: center;
+  /* width: 150px; */
+  width: auto;
+  height: 20vh;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+#twitter-jon_solomon summary,
+#twitter-jon_solobot summary {
+  font-size: 1em;
+  text-align: center;
+}
+
+a.twitter-mention-button,
+a.twitter-follow-button {
+}
+
+a.twitter-line {
+}
+
+#title_card--jon_solomons_tweets div.wprbxmas_card--warning,
+#title_card--jon_solobots_tweets div.wprbxmas_card--warning {
+  margin-top: 25px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.firefox_twitter_issue {
+  display: inline-block;
+  max-width: 50ch;
+  margin: 50px auto;
+  border-radius: var(--border_radius);
+  padding: 25px;
+  font-weight: 800;
+  font-size: 12px;
+  font-style: italic;
+  background: var(--santa_yellow);
+}
+
+/* #endregion */
+
+/* #region Jon Solomon's Tweets Card */
+
+#title_card--jon_solomons_tweets {
+}
+
+#solomon_twitter_card--twitter_widgets--tweet_to_and_follow {
+  margin-top: 25px;
+}
+
+#solomon_twitter_card--twitter_widgets--twitter-timeline {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* #endregion */
+
+/* #region Jon Solobot's Tweets Card */
+
+#title_card--jon_solobots_tweets {
+}
+
+#solobot_twitter_card--twitter_widgets--tweet_to_and_follow {
+  margin-top: 25px;
+}
+
+#solobot_twitter_card--twitter_widgets--twitter-timeline {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+/* #endregion */

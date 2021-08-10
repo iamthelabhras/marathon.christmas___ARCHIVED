@@ -1,0 +1,52 @@
+/* #region Make a Request Card */
+
+/* Resize Make a Request Card so that its larger "neighbor" doesn't stretch it out too much. */
+
+#title_card--make_a_request {
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#title_card--make_a_request input {
+  margin: 10px 0px;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+#title_card--make_a_request input:nth-of-type(n + 3) {
+  height: 50px;
+}
+
+#title_card--make_a_request div.wprbxmas_card--desc {
+  margin-bottom: 20px;
+}
+
+#title_card--make_a_request button {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  background: var(--black);
+  font-family: Rubik, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#title_card--make_a_request iframe {
+  height: 500px;
+}
+
+/* #endregion */
+
+/* #region MEDIA QUERIES - Tablets */
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  #title_card--make_a_request {
+    margin-left: var(--title_cards--margin---left---far_left);
+    margin-right: 0px;
+  }
+}
+
+/* #endregion MEDIA QUERIES - Tablets */

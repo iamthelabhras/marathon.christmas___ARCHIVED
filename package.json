@@ -1,20 +1,20 @@
 {
-  "name": "marathon_christmas",
+  "name": "marathon_christmas_redux",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "sasswatch": "sass --watch src/scss:dist/css/"
   },
   "author": "Labhrás Mac Gabhann",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "moment": "^2.29.1",
-    "socket.io": "^3.0.4"
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.37.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0"
   }
 }

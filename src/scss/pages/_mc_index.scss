@@ -1,0 +1,68 @@
+main#mc_main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#container--now_playing_to_wprbxmas_submissions {
+}
+
+/* #region MEDIA QUERIES */
+
+@media screen and (min-width: 0px) and (max-width: 575px) /* Media queries that apply to more than one Sass partial / title card on mobile. */ {
+  #title_card--ghosts_of_marathons_past,
+  #title_card--listener_chat,
+  #title_card--make_a_request,
+  #title_card--now_playing_on_wprbxmas,
+  #title_card--wprbpressmas,
+  #title_card--jon_solomons_tweets,
+  #title_card--jon_solobots_tweets,
+  #title_card--wprbxmas_stream,
+  #title_card--wprbxmas_tweets,
+  #title_card--wprbxmap {
+    width: var(--title_cards--whole---width);
+  }
+
+  #title_card--listener_chat,
+  #title_card--make_a_request,
+  #title_card--wprbpressmas {
+    align-self: initial;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  #title_card--ghosts_of_marathons_past,
+  #title_card--listener_chat,
+  #title_card--make_a_request,
+  #title_card--now_playing_on_wprbxmas,
+  #title_card--wprbpressmas,
+  #title_card--jon_solomons_tweets,
+  #title_card--jon_solobots_tweets,
+  #title_card--wprbxmas_stream,
+  #title_card--wprbxmas_tweets,
+  #title_card--wprbxmap {
+    width: var(--title_cards--whole---width);
+  }
+  #title_card--listener_chat,
+  #title_card--make_a_request,
+  #title_card--wprbpressmas {
+    align-self: initial;
+  }
+}
+
+/* #endregion MEDIA QUERIES */
+
+/* #region SUPPORTS QUERIES - Browsers */
+/* This is a browser hack that will stop working at some point!  See: http://browserhacks.com/#hack-12fab4e42897a8439c42d9e92d5f1047 */
+
+/* @supports (-moz-appearance: meterbar) and
+  (background-blend-mode: difference, normal) {
+  div.responsive--show_firefox {
+    display: initial;
+  }
+} */
+
+/* #endregion SUPPORTS QUERIES*/

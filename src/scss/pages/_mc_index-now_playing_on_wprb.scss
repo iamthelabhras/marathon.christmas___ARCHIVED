@@ -1,0 +1,366 @@
+#title_card--now_playing_on_wprbxmas {
+  /* TO DO: Figure out why mc_box-flex_container--two_thirds isn't applying 
+        margin-left to this title card! */
+  margin-left: var(--title_cards--margin---left---far_left);
+}
+
+.spinitron {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.spinitron h4 {
+  margin-bottom: 40px;
+}
+
+#tune_in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tune_in--radio_icon {
+  /* Add margin to radio icon to position it slightly away from <p> element. */
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+#current_track_container {
+  justify-content: center;
+}
+
+.spinitron div.spinitron-js-widget {
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Note: There are two of these in the HTML: 
+      one for mobile & one for tablet/laptop/desktop. */
+.spinitron div.current_track {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 30px;
+}
+
+.spinitron details {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-weight: 600;
+  text-align: center;
+}
+
+.spinitron details > div {
+  text-align: initial;
+}
+
+.spinitron summary#playlist_summary {
+  font-size: 1.35em;
+  margin-bottom: 20px;
+}
+
+#current_playlist_container {
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 10px; */
+}
+
+#current_playlist_container div.spin,
+#current_playlist_container div.info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+/* Note: There are two of these in the HTML: 
+      one for mobile & one for tablet/laptop/desktop. */
+
+.spinitron div.current_playlist {
+  padding-bottom: 10px;
+}
+
+.spinitron div.current_playlist p {
+  display: none;
+}
+
+.spinitron div.current_playlist h3 {
+  display: none;
+}
+
+/* Spinitron Data */
+
+/* WPRB Show Title */
+.playlist-title {
+}
+
+/* Month Day, Year & Broadcast Start & End Times */
+.datetime-block {
+  margin-top: -35px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.show-date {
+  display: block;
+}
+.show-start {
+}
+.show-end {
+}
+
+.spinitron_link {
+  padding-bottom: 10px;
+}
+
+/* Div Containing All Playlist Data */
+#public_spins {
+}
+
+/* Same Div As Above (Contains All Playlist Data) But Targeted By Class */
+.spins {
+}
+
+/* Table Nested Within #public_spins Div Containing All Playlist Data */
+#public_spins table.table {
+}
+
+/* Same table As Above (Nested Within #public_spins Div) But Targeted By Element */
+.spins table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+/* These table rows are nested within a <tbody> element & 
+      contain data for ALL played tracks */
+tr.spin_item {
+  margin-bottom: 100px;
+}
+
+/* Nested within each <tr> element */
+tr td.spin-time {
+  color: black;
+}
+tr td.spin-time a {
+  margin-right: 10px;
+  color: var(--black) !important;
+  font-size: 1rem !important;
+}
+
+tr td.spin-time,
+/* tr.spin-art contains div.spin-art-container & div.spin-player */
+td tr.spin-art {
+}
+
+/* Nested Within Spin-Text But Contains span.artist, span.song, & div.info */
+.spin {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+td.spin-text span.artist,
+td.spin-text span.song,
+td.spin-text span.release,
+td.spin-text span.parenthesis {
+  margin-left: 15px;
+}
+
+td.spin-text span.artist {
+  display: block;
+  /* margin-left: 15px; */
+  color: var(--black) !important;
+  font-size: 1.25em;
+}
+
+td.spin-text span.song {
+  color: var(--santa_red) !important;
+}
+
+td.spin-text span.release {
+  /* In Spinitron's API, "release" means album title */
+  display: block;
+  align-self: flex-end;
+  max-width: 35ch;
+  font-size: 0.85rem;
+  color: var(--black) !important;
+}
+
+.release::before {
+  display: none;
+}
+
+td.spin-text span.parenthesis span.label {
+  font-size: 0.8rem;
+  color: var(--black) !important;
+}
+
+td.spin-text span.parenthesis span.released {
+  /* In Spinitron's API, "released" means year of release. */
+  font-size: 0.8rem;
+  color: var(--black) !important;
+}
+
+/* Nested with td.spint-text after div.spin, & div.info */
+.note {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 45ch;
+  width: auto;
+  font-size: 0.85em;
+  font-weight: 800;
+  background-color: var(--santa_yellow);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Spinitron Data Not Displayed in Now Playing on WPRBXmas Card */
+
+.composer {
+  display: none;
+}
+
+/* Now Playing On WPRBXmas Card -- Current Playlist -- Show Title */
+
+#title_card--now_playing_on_wprbxmas h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 20px;
+}
+#title_card--now_playing_on_wprbxmas .playlist-title {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Candy Cane";
+  font-size: 2.5em;
+}
+
+#title_card--now_playing_on_wprbxmas p {
+  font-size: 1.15em;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  /* MEDIA QUERIES -- Mobile -- Mobile Show & Hides */
+
+  .spinitron {
+    width: 85vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+  }
+
+  #title_card--now_playing_on_wprbxmas p:nth-of-type(1) {
+    text-align: left;
+  }
+
+  #title_card--now_playing_on_wprbxmas p:nth-of-type(2) {
+    text-align: left;
+  }
+
+  #current_track_container {
+    width: 100%;
+  }
+
+  #current_playlist_container > * {
+    width: 100%;
+  }
+
+  .tune_in--radio_icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .current-playlist h3 {
+    display: none;
+  }
+
+  .spinitron div.current_playlist {
+    padding-bottom: 10px;
+  }
+
+  .spinitron div.current_playlist p {
+    display: none;
+  }
+
+  #current_playlist_container div.spin,
+  #current_playlist_container div.info {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .public-spins {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .playlist-title {
+    margin-top: 10px;
+    text-align: center;
+    font-family: candy_cane_unregisteredRg;
+    font-size: 2.5em;
+  }
+
+  .datetime-block {
+    margin-top: -35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .show-date {
+    display: block;
+  }
+
+  td.spin-time {
+    display: none;
+  }
+
+  .artist {
+    display: block;
+    font-size: 1.25em;
+  }
+
+  .composer {
+    display: none;
+  }
+
+  .release {
+    display: block;
+    align-self: center;
+    font-size: 0.7rem;
+  }
+
+  .release::before {
+    display: initial;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  .released {
+    font-size: 0.7rem;
+  }
+
+  .spin {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+
+  .note {
+    /* Hide non-mobile specific ids & values */
+    display: none;
+    background-color: var(--santa-red_rgba-1);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .spinitron {
+    /* width : 90vw; */
+    /* The width of this div seems to be the culprint behind the persistent Spinitron CSS-IS-AWESOME-type issues? */
+    width: auto;
+  }
+}

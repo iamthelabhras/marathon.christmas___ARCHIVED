@@ -1,0 +1,74 @@
+main#changelog h2 {
+  display: block;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  background: var(--santa_green);
+}
+
+main#changelog h2.page_title {
+  font-size: 4.5em;
+  background: none;
+}
+
+/* #endregion */
+
+/* #region Global Elements -- Typography */
+
+main#changelog h1 {
+  font-size: 5vw;
+  color: var(--santa_red);
+}
+
+main#changelog h2 {
+  font-family: "xmas_sweater_stitchregular", serif;
+}
+
+main#changelog h3 {
+  font-family: "xmas_sweater_stitchregular";
+  font-size: 2.25vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main#changelog p {
+  font-size: 1.25em;
+}
+/* #endregion */
+
+/* #region Changelog */
+
+main#changelog .story_author {
+  text-align: center;
+  margin-bottom: 0.75vh;
+  font-size: var(--story_author-font_size);
+}
+
+main#changelog .story_title {
+  text-align: center;
+  font-size: var(--story_title-font_size);
+  font-weight: 700;
+}
+
+main#changelog .story_title_top_margin {
+  margin-top: 10px;
+}
+
+main#changelog .author_pull_up {
+  margin-bottom: 0;
+}
+
+main#changelog .story_desc {
+  font-size: var(--story_desc-font_size);
+}
+
+main#changelog ul.changelog_ul {
+  padding: 0;
+  font-size: var(--story_desc-font_size);
+}
+
+main#changelog li.changelog_li {
+  margin-bottom: 10px;
+}
+
+/* #endregion */

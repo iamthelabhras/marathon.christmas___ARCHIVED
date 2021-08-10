@@ -1,0 +1,77 @@
+#web_app--audio_blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 906px;
+  height: auto;
+  border: none;
+  padding: 20px 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#web_app--audio_blocks .key {
+  flex-shrink: 0;
+  text-align: center;
+  width: 10rem;
+  margin: 1rem;
+  border: 0.4rem solid var(--body_bg-lighter);
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  background: var(--body_bg);
+  box-shadow: 2px 2px 1px var(--santa_box_shadow-primary);
+  font-family: "Xmas Sweater", sans-serif;
+  font-size: 2.25rem;
+  color: var(--santa_yellow);
+  text-shadow: 0 0 0.1rem var(--santa_black);
+  transition: all 0.2s ease;
+}
+
+#web_app--audio_blocks .key.playing {
+  transform: scale(1.2);
+  border-color: var(--santa_yellow);
+  box-shadow: 0 0 1rem var(--santa_white);
+}
+
+#web_app--audio_blocks kbd {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+#web_app--audio_blocks span.sound {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 5px;
+  border: 2px solid var(--santa_body_bg);
+  background-color: var(--santa_red);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  color: var(--santa_white);
+}
+
+#web_app--audio_blocks .key:nth-child(even) {
+  transform: rotate(10deg);
+}
+
+#web_app--audio_blocks .key:nth-child(odd) {
+  transform: rotate(-10deg);
+}
+
+/* #region MEDIA QUERIES */
+@media screen and (max-width: 671px) {
+  /* Sounds of Marathon Christmas Snippet
+  	Unrotate letter blocks on smaller screens. */
+  #web_app--audio_blocks .key:nth-child(even),
+  #web_app--audio_blocks .key:nth-child(odd) {
+    transform: rotate(0deg);
+  }
+}
+/* #endregion MEDIA QUERIES */

@@ -1,12 +1,15 @@
 # Tell Git to ignore these folders:
 .cache/
-dist/
-audio/wprbxmas_songs/
-audio/wprbxmas_stories/
-audio/wprbxmas_misc/
+.parcel-cache/
+archived/
 audit/
+dist/
 node_modules/
 notes--dev/
+src/audio/wprbxmas_misc/
+src/audio/wprbxmas_songs/
+src/audio/wprbxmas_stories/
+
 
 # Tell Git to ignore these files:
 

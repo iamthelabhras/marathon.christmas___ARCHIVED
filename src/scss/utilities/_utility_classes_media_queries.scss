@@ -1,0 +1,101 @@
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  /* MEDIA QUERIES -- Mobile -- Mobile Show & Hides */
+
+  .responsive--show_tablet {
+    display: none !important;
+  }
+
+  .responsive--show_laptop {
+    display: none !important;
+  }
+
+  .responsive--show_desktop {
+    display: none !important;
+  }
+
+  .responsive--show_mobile {
+    display: initial !important;
+  }
+  .responsive--hide_mobile {
+    display: none !important;
+  }
+
+  /* Boxify Flexbox layouts for mobile */
+  .responsive--mobile_flex_direction_column {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  /* MEDIA QUERIES - Tablet Show & Hides */
+
+  .responsive--show_mobile {
+    display: none !important;
+  }
+
+  .responsive--show_laptop {
+    display: none !important;
+  }
+
+  .responsive--show_desktop {
+    display: none !important;
+  }
+
+  .responsive--show_tablet {
+    display: initial !important;
+  }
+
+  .responsive--hide_tablet {
+    display: none !important;
+  }
+
+  .responsive--tablet_flex_direction_column {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* MEDIA QUERIES - Laptop Show & Hides */
+
+  .responsive--show_mobile {
+    display: none !important;
+  }
+
+  .responsive--show_tablet {
+    display: none !important;
+  }
+
+  .responsive--show_desktop {
+    display: none !important;
+  }
+
+  .responsive--show_laptop {
+    display: initial !important;
+  }
+
+  .responsive--hide_laptop {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .responsive--show_mobile {
+    display: none !important;
+  }
+
+  .responsive--show_tablet {
+    display: none !important;
+  }
+
+  .responsive--show_laptop {
+    display: none !important;
+  }
+
+  .responsive--show_desktop {
+    display: initial !important;
+  }
+
+  .responsive--hide_desktop {
+    display: none !important;
+  }
+}

@@ -1,0 +1,63 @@
+/* #region Custom Variables */
+
+:root {
+  /* Title Card Margins (Top, Bottom, Left (Inner & Outer), Right (Inner & Outher), & Widths */
+  --title_cards--margin---top: 10vh;
+  --title_cards--margin---bottom: 10vh;
+  --title_cards--margin---left---far_left: 2.5vw;
+  --title_cards--margin---left---inner_left: 1.5vw;
+  --title_cards--margin---right---far_right: 2.5vw;
+  --title_cards--margin---right---inner_right: 1.5vw;
+  /* Title Cards Widths */
+  --title_cards--whole---width: 95vw;
+  --title_cards--halves---width: 46vw;
+  // --title_cards--thirds---width: 29.7vw;
+  /* Not sure why this value (title_cards--thirds--width) works ... 
+      99.9% chance there's something wrong with my back-of-the-envelope math! */
+  --title_cards--thirds---width: 32.3vw;
+  --title_cards--two_thirds---width: 59.3vw;
+  --title_cards--fourths---width: 21.5vw;
+  --title_cards--three_fourths---width: /* TO DO */ ;
+  /* Site Colors */
+  --body_bg: #1f253c;
+  --body_bg-lighter: #353b50;
+  --santa_green: #4dfd78;
+  --santa_green_rgba: rgba(77, 253, 120, 0.35);
+  --santa_red: #ec5e95;
+  --santa_red_rgba: rgba(236, 94, 149, 0.15);
+  --santa-red_rgba-1: rgba(236, 94, 149, 0.15);
+  --santa_red_rgba-2: rgba(236, 94, 149, 0.85);
+  --santa_red_transparent-2: rgba(236, 94, 149, 0.25);
+  --santa_red_transparent: rgba(236, 94, 149, 0.7);
+  --santa_white: #ffff;
+  --santa_yellow: #f9fb22;
+  --santa_yellow-transparent: rgba(255, 255, 0, 0.45);
+  --santa_skin_color: #ecc85e;
+  --grey: #808080;
+  --black: rgba(1, 2, 3, 0.95);
+  /* Candy Cane Loader Width & Height */
+  --loader_candy_width: 100px;
+  --loader_candy_height: 300px;
+  /* Site Colors 8 Loaders -- Candy Cane Loaders */
+  --loader_bg_color: #1f253c;
+  --loader_candy_color_1: #d33144;
+  --loader_candy_color_2: #ffffee;
+  /* Site Colors -- Shadows */
+  --audio_shadow: #006773;
+  --box_shadow-primary: rgba(128, 128, 128, 0.5);
+  /* Borders */
+  --border_radius: 15px;
+  /* Fonts */
+  --lyrics_font_size: 0.75rem;
+  --sweater_font_family: "Xmas Sweater", "Rubik", sans-serif;
+  --story_author-font_size: 1.75rem;
+  --story_desc-font_size: 1.15rem;
+  --story_title-font_size: 1.45rem;
+  /* Animation -- Times */
+  --loader_anim_time: 8.5s;
+  --loader_fade_out_time: 2s;
+  /* To Sort */
+  --wprbxmas_story--max_width: 50ch;
+}
+
+/* #endregion Custom Variables */

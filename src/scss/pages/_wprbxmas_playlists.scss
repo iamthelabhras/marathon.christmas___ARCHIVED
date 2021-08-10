@@ -1,0 +1,126 @@
+.playlist_2 tr td.column4,
+.playlist_2 tr td.column5 {
+  font-family: "Happy Xmas";
+  font-size: 25px;
+}
+
+.playlist_2 tr.row0 td.column4,
+.playlist_2 tr.row0 td.column5 {
+  font-family: "Happy Xmas";
+}
+
+/* #region Nav Menu */
+
+.playlist_2 div.under_construction {
+  /* border: 1px solid black; */
+}
+
+.playlist_2 div.under_construction img {
+  float: right;
+}
+
+.playlist_2 nav {
+  /* margin-right: auto; */
+}
+
+.playlist_2 nav.back_home_arrow a .icon {
+  /* left: 1vw; */
+  position: absolute;
+  left: 1vw;
+  color: var(--black);
+  transition: rotate 1s;
+}
+
+.playlist_2 nav.back_home_arrow .icon:hover {
+  color: red;
+  rotate: 360deg;
+}
+
+/* #endregion */
+
+/* Generic Styling, for Desktops/Laptops */
+.playlist_2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+.playlist_2 tr:nth-of-type(odd) {
+  background: #eee;
+}
+.playlist_2 th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.playlist_2 td,
+.playlist_2 th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.playlist_2 div.under_construction {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist_2 tr {
+  font-size: 12px;
+  transition: all 0.15s;
+}
+
+.playlist_2 tr:hover {
+  background: red;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.playlist_2 tr.row0 {
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+  font-family: "Candy Cane";
+  font-size: 15px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.playlist_2 tr.row0 td.column3 {
+  font-style: normal;
+}
+
+.playlist_2 tr.row0 td.column0,
+.playlist_2 tr.row0 td.column4,
+.playlist_2 tr.row0 td.column5 {
+  font-size: inherit;
+}
+
+.playlist_2 tr.row0 td.column6 {
+  text-align: center;
+}
+
+.playlist_2 td.column3 {
+  font-style: italic;
+}
+
+.playlist_2 td.column0,
+.playlist_2 td.column4,
+.playlist_2 td.column5 {
+  text-align: center;
+  font-size: 8px;
+}
+
+.playlist_2 td.column6 {
+  font-weight: 700;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+/* @media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+} */

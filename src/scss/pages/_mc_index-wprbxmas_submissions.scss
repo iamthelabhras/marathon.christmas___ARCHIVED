@@ -1,0 +1,154 @@
+#title_card--wprbxmas_submissions {
+}
+
+#submissions-background_image_and_guidelines_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#submissions_text-background_info {
+  max-width: 55ch;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.submissions_ghosts {
+  font-family: "Xmas Sweater", serif;
+  font-style: italic;
+}
+
+#submissions_image_and_caption_container {
+}
+
+img#submissions_image {
+}
+
+figcaption#submissions_caption {
+}
+
+#submissions_text-rules {
+  max-width: 55ch;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.submission_dropdowns {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  background: var(--santa_green_rgba);
+  text-transform: capitalize;
+  font-size: 1.05em;
+  font-weight: 700;
+}
+
+.submission_dropdowns ul {
+  list-style: none;
+}
+
+.submission_dropdowns li {
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.submission_dropdowns li::before {
+  content: "🎄";
+  font-style: normal;
+  padding-right: 20px;
+}
+
+#typeform_button {
+}
+
+button.typeform {
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  height: auto;
+  padding: 0px 33px;
+  border-radius: 10px;
+  min-width: 50%;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 20px;
+  transition: all 1s;
+}
+
+/* 2021 WPRBXMas Submissions Card, & 2021 WPRBXmas image */
+
+figcaption {
+  max-width: 25ch;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
+
+/* 2021 WPRBXmas Submissions Card */
+
+.mc_box-header--large {
+  font-size: 3.5em;
+  font-family: var(--sweater_font_family);
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  /* MEDIA QUERIES -- Mobile */
+  #submissions_card {
+    width: 95vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    padding: 0px;
+  }
+
+  #submissions-background_image_and_guidelines_container {
+    width: 100%;
+  }
+
+  .submission_dropdowns {
+    font-size: 1rem;
+  }
+
+  .submission_dropdowns ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .submission_dropdowns li {
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .submission_dropdowns li::before {
+    content: "🎄";
+    font-style: normal;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1130px) {
+  #submissions-background_image_and_guidelines_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

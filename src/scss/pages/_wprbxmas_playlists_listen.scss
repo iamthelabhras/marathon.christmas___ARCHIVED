@@ -1,0 +1,165 @@
+/* #region Nav Menu */
+
+.playlist nav {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.playlist nav.back_home_arrow a .icon {
+  color: var(--black);
+  transition: rotate 1s;
+}
+
+.playlist nav.back_home_arrow .icon:hover {
+  color: var(--santa_red);
+  rotate: 360deg;
+}
+
+/* #endregion */
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+.playlist table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+.playlist tr:nth-of-type(odd) {
+  background: var(--santa_red_rgba);
+}
+.playlist th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.playlist td,
+.playlist th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Style Top Row of Playlist Table */
+
+.playlist tr.row0 {
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+  font-family: "Candy Cane";
+  font-size: 15px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+/* "Disable" Hover on Top Row of Playlist Table */
+
+.playlist tr.row0:hover {
+  background: black;
+  color: white;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.playlist tr.row0 td.column1,
+.playlist tr.row0 td.column2,
+.playlist tr.row0 td.column7,
+.playlist tr.row0 td.column8 {
+  font-size: 45px;
+}
+
+.playlist tr.row0 td.column4,
+.playlist tr.row0 td.column7 {
+  font-style: normal;
+  text-align: center;
+}
+
+.playlist tr td.column3,
+.playlist tr td.column8 {
+  font-size: 25px;
+}
+
+.playlist tr td.column1,
+.playlist tr td.column2 {
+  font-size: 14px;
+}
+
+.playlist tr td.column4 {
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Set Font Awesome Icon Colors To Site Color*/
+
+.playlist i.fab,
+.playlist i.fas {
+  color: var(--santa_red);
+}
+
+.playlist tr td.column5,
+.playlist tr td.column6 {
+  color: var(--santa_red);
+  font-family: "Happy Xmas";
+  font-size: 20px;
+}
+
+.playlist tr {
+  transition: all 0.15s;
+}
+
+.playlist tr:hover {
+  background: var(--santa_yellow);
+  font-weight: 800;
+}
+
+.playlist tr.row0 td.column3 {
+  font-style: normal;
+}
+
+.playlist tr.row0 td.column0,
+.playlist tr.row0 td.column4,
+.playlist tr.row0 td.column5 {
+  font-size: inherit;
+}
+
+.playlist tr.row0 td.column6 {
+  text-align: center;
+}
+
+.playlist td.column3 {
+  font-style: italic;
+}
+
+.playlist td.column0,
+.playlist td.column4,
+.playlist td.column5 {
+  text-align: center;
+  font-size: 8px;
+}
+
+.playlist td.column6 {
+  font-weight: 700;
+}
+
+.playlist td.column7 {
+  max-width: 50ch;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.playlist tr.row17 td.column7,
+.playlist tr.row101 td.column7,
+.playlist tr.row244 td.column7 {
+  text-align: center;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+}

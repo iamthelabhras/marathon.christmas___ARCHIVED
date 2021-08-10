@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+  /* Current scroll-padding-top value (210px) is the product 
+        of trial & error; it is *not* programatically linked to 
+        the title cards each Christmas light bulb scrolls to.  
+        This will need to be addressed / changed in the future, probably
+        during the code review / refactor I plan on undertaking in the three
+        months (Sept-Nov 2021) leading up to the 31st annual WPRBXmas marathon. */
+  scroll-padding-top: 210px;
+}
+
+body {
+  background-color: var(--body_bg);
+  font-family: "Rubik", sans-serif;
+}
+
+/* #region Base Hyperlinks */
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: var(--black);
+}
+
+/* @endregion */
+
+/* #region Site-Wide Base Image Styles */
+
+img.social_media {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  margin-left: -5px;
+}
+
+/* #endregion Site-Wide Base Image Styles */

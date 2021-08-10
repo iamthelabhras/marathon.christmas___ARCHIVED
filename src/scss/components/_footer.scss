@@ -1,0 +1,94 @@
+footer {
+  margin-top: var(--cards_margin_top);
+  margin-bottom: var(--cards_margin_bottom);
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background: var(--body_bg-lighter);
+}
+
+div#title_card--footer {
+  justify-content: space-around;
+  max-width: 1500px;
+  padding: 25px;
+}
+
+/* Display Bouncing Santa on mobile only. */
+img#bouncing_santa {
+  display: none;
+  height: 125px;
+  width: 125px;
+  margin: 0 auto;
+}
+
+div#title_card--footer audio {
+  align-self: center;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  width: 175px;
+  height: 25px;
+}
+
+div#title_card--footer audio:hover,
+div#title_card--footer audio:focus,
+div#title_card--footer audio:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.25);
+}
+
+div#title_card--footer audio:hover,
+div#title_card--footer audio:focus,
+div#title_card--footer audio:active {
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@-moz-document url-prefix() {
+  audio {
+    background: var(--black);
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px var(--audio_shadow);
+    box-shadow: 2px 2px 4px 0px var(--audio_shadow);
+    -moz-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+
+div#copyleft_and_attribution {
+  justify-content: center;
+  align-items: center;
+}
+
+img.img_copyleft {
+  margin: 0 auto 10px;
+  width: 25px;
+  height: 25px;
+}
+
+span.copyleft {
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  footer div {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  footer audio {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  footer img#bouncing_santa {
+    display: initial;
+    height: 150px;
+    width: 125px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}

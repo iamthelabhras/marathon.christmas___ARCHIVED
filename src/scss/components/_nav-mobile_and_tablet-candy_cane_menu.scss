@@ -1,0 +1,133 @@
+.candy_cane-toggle {
+  /* Clickable / openable & closeable button itself.  Contains nav menu.  
+        Responsive utility classes are applied to the element styled by this class. */
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  background: transparent;
+}
+
+/* Class applied to clickable candy cane circle when nav menu is closed. */
+.candy_cane-toggle-hide {
+  display: initial;
+  height: auto;
+  width: auto;
+  visibility: visible;
+}
+
+/* Class applied to clickable candy cane circle when nav menu is open. */
+.candy_cane-toggle--hidden {
+  height: 0;
+  width: 0;
+  display: none;
+  visibility: hidden;
+}
+
+div.candy_cane-icon {
+  color: var(--santa_red);
+  margin-top: 15px;
+  margin-left: 20px;
+  border-radius: 50%;
+  padding: 25px;
+  opacity: 0.5;
+  background: var(--body_bg-lighter);
+}
+
+div.candy_cane-icon:hover,
+div.candy_cane-icon:focus {
+  transform: rotate(360deg);
+}
+
+.candy_cane-links--container {
+  display: none;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: var(--border_radius);
+  background: var(--body_bg-lighter);
+}
+
+.candy_cane-links--container--open {
+  display: flex;
+}
+
+.candy_cane-links--container span {
+  color: white;
+}
+
+.candy_cane-links--container span.candy_cane-link--close_menu {
+  font-size: 1.25rem;
+  color: var(--santa_yellow);
+}
+
+.candy_cane-links--container ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  list-style: none;
+}
+
+.candy_cane-links--container li {
+  margin: 10px;
+  border-radius: var(--border_radius);
+  text-align: center;
+  background: var(--body_bg);
+}
+
+.candy_cane-links--container li:first-child,
+.candy_cane-links--container li:last-child {
+  background: var(--santa_red_rgba-2);
+}
+
+.candy_cane-links--container li:hover,
+.candy_cane-links--container li:focus {
+  background: var(--santa_red);
+}
+
+.candy_cane-links--container a {
+  display: inline-block;
+  padding: 2rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* These utility classes are not referenced in styles--main.css.  */
+/* They are ref'd in candy_cane_nav.js. */
+
+.candy_cane-nav-hide_everything_but_nav--hidden {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  /* MEDIA QUERIES -- Mobile -- Mobile Show & Hides */
+  div.candy_cane-toggle {
+    position: fixed;
+    top: 0;
+    left: var(--title_cards--margin---left---far_left);
+    display: inline-block;
+    background: transparent;
+  }
+}
+
+/* #region MEDIA QUERIES */
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  /* Tablet Nav Changes */
+  div.candy_cane-toggle {
+    margin-left: 3.75vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Tablets - iPad Pro */
+  div#title_card--nav--tablets li {
+    font-size: 1.25rem;
+  }
+}
+
+/* #endregion MEDIA QUERIES */

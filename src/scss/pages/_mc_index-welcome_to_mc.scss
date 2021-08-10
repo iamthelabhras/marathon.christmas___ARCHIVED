@@ -1,0 +1,256 @@
+/* All Other MARATHON CHRISTMAS Cards in index.html */
+
+.mc_box-header {
+  font-family: var(--sweater_font_family);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Site Name */
+
+#site_name {
+  /* Deleted another h1#site_name style in Media Queries when attempting to
+     * get this to work for mobile.  Not happy with how the Title Card looks on
+     * mobile anyway, so I don't think this is a big deal.  Nevertheless, leaving this note here for future me. */
+  font-family: "Candy Cane", cursive;
+  margin-bottom: 100px;
+}
+
+/* #region MARATHON CHRISTMAS Title Card */
+
+/* CSS "hacks" for audio player courtesy of Spike over at Stack Overflow: 
+  https://stackoverflow.com/questions/3794682/custom-css-for-audio-tag */
+
+#title_card--title_card {
+  /* Remove default MC Box top margin from Title Card to 
+      Close Gap Between Card & Christmas Light Nav Menu Closer */
+  margin-top: 0vh;
+  /* No idea why this hack is necessary, but without it 
+      the space separting the Title Card & WPRBXmas Submissions does 
+      not line up with the rest of the site? */
+  margin-bottom: 10vh;
+  /* Remove default padding flex_container--whole padding to
+      bring marathon christmas <h1> to top of card. */
+  padding-top: 0px;
+}
+
+/* TITLE CARD: Site Desc & Current Marathon Details Container */
+#title_card--welcome_to_marathon_christmas_and_current_marathon_container {
+  margin-top: 5vh;
+  justify-content: space-between;
+}
+/* TITLE CARD: Welcome to Marathon Christmas Site Desc */
+
+#title_card--welcome_to_marathon_christmas {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome_to_marathon_christmas {
+  max-width: 45ch;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+#title_card--welcome_to_marathon_christmas p {
+  max-width: 50ch;
+}
+
+#title_card--welcome_to_marathon_christmas p:last-of-type {
+  /* Use flex grow on paragraph (currently, "Much Like WPRBXmas...") 
+     to guarantee desktop & mobile instructions are flush with bottom of card. */
+  flex-grow: 1;
+}
+
+.wprbxmas_card--instructions {
+  /* Double the padding on table.marathon_start_and_end_times.  */
+  align-self: center;
+  width: 50%;
+  padding: 20px 10px;
+}
+
+#desktop_nav_menu_instructions,
+#mobile_and_tablet_nav_menu_instructions {
+  font-weight: 800;
+}
+
+/* TITLE CARD: Current Marathon Details */
+
+#title_card--current_marathon_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#title_card--current_marathon_details h2 {
+  align-self: center;
+  text-align: center;
+}
+
+#current_marathon_details--years_running--facebook_rsvp {
+}
+
+img.current_marathon_record {
+  align-self: center;
+  width: 175px;
+  height: 175px;
+  transform: scale(0.88) rotate(-20deg);
+}
+
+#countdown_to_wprbxmas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 10px;
+  margin: 20px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+#countdown_to_wprbxmas > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 85px;
+  height: 75px;
+  padding: 5px;
+  border: 0.4rem solid var(--body_bg-lighter);
+  border-radius: 0.5rem;
+  background: var(--body_bg);
+  text-shadow: 0 0 0.1rem var(--black);
+  box-shadow: 2px 2px 1px var(--box_shadow-primary);
+  color: var(--santa_yellow);
+}
+
+// #countdown_to_wprbxmas > div:last-of-type {
+//   margin-right: 0px;
+// }
+
+#countdown_to_wprbxmas > div > span:nth-of-type(2) {
+  font-size: 0.85rem;
+}
+
+table.marathon_start_and_end_times {
+  align-self: center;
+  width: 50%;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 10px 5px;
+  background: var(--santa_green_rgba);
+}
+
+th.starts,
+th.ends {
+  padding-bottom: 15px;
+  font-family: "Xmas Sweater", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+td.current_marathon_dates,
+td.current_marathon_times {
+  text-align: center;
+  font-weight: 800;
+  color: black;
+}
+
+td.current_marathon_dates {
+  font-size: 1.25rem;
+}
+
+td.current_marathon_times {
+  font-size: 1rem;
+}
+
+/* #endregion */
+
+/* #region MEDIA QUERIES -- ALL MEDIA QUERIES */
+
+/* #region MEDIA QUERIES - Mobile */
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  /* MEDIA QUERIES -- Mobile */
+
+  #title_card--welcome_to_marathon_christmas,
+  #title_card--current_marathon_details {
+    width: 100%;
+  }
+
+  #title_card--welcome_to_marathon_christmas h2,
+  #title_card--welcome_to_marathon_christmas p {
+    max-width: auto;
+  }
+
+  #title_card--current_marathon_details h2 {
+    /* Place as much space between the current marathon details div & 
+        the welcome to marathon christmas div on mobile as there is between
+        the marathon christmas h1 and the combined welcome to marathon christmas /
+        current marathon details div on desktop view. */
+    margin-top: 100px;
+  }
+
+  /* Resize elements for mobile */
+  /* Note: Remember that tweaked tablet nav menu elements are _not_ resized here! */
+
+  .mc_box-header {
+    font-size: 3em;
+    text-align: center;
+    font-style: italic;
+  }
+
+  #title_card {
+    width: 95vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    padding: 10px;
+  }
+
+  #welcome_to_marathon_christmas {
+    max-width: 45ch;
+    padding: 0 20px;
+    font-size: 1.15rem;
+  }
+
+  /* Flagged as possibly redundant CSS. 
+  p.card-text {
+    max-width: 45ch;
+    font-size: 1.15rem;
+  }
+  */
+
+  #current_marathon_details--years_running--facebook_rsvp {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #title_card--current_marathon_details .important_text {
+    max-width: 40ch;
+  }
+
+  img.current_marathon_record {
+    display: none;
+  }
+}
+
+/* #endregion MEDIA QUERIES - Mobile */
+
+@media screen and (min-width: 0px) and (max-width: 1181px) {
+  #title_card--welcome_to_marathon_christmas_and_current_marathon_container {
+    justify-content: center;
+  }
+
+  #title_card--current_marathon_details h2 {
+    margin-top: calc(5vh + 20px);
+  }
+}
+
+/* #endregion MEDIA QUERIES -- ALL MEDIA QUERIES */
