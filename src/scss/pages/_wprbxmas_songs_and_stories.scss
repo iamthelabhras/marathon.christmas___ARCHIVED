@@ -1,0 +1,286 @@
+main.songs,
+main.stories {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main.songs .christmas_lights,
+main.stories .christmas_lights {
+  position: initial;
+  margin-bottom: 50px;
+}
+
+main.songs h1,
+main.stories h1 {
+  text-align: center;
+}
+
+main.songs h2,
+main.stories h2 {
+  color: var(--santa_red);
+}
+
+#marathons_past--bouncing_santa_and_introduction {
+  width: 80vw;
+}
+
+img#bouncing_santa--songs,
+img#bouncing_santa--stories {
+  width: 300px;
+  height: 300px;
+  margin-right: 25px;
+}
+
+#marathons_past--introduction {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#marathons_past--introduction p {
+  max-width: 55ch;
+}
+
+#marathons_past--introduction img {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+}
+
+#marathons_past--introduction nav {
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: var(--border_radius);
+  background: var(--santa_red);
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* #region WPRBXMAS STORIES & SONGS */
+
+.wprbxmas_stories {
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 10vh 5vh;
+  border: 3px solid var(--black);
+  border-radius: 10px;
+  padding: 4vw;
+  background: var(--santa_white);
+  box-shadow: 2.75px 2.75px var(--box_shadow-primary);
+}
+
+.wprbxmas_story {
+  justify-content: center;
+  align-items: center;
+  max-width: var(--wprbxmas_story--max_width);
+  margin-bottom: 5vh;
+  border: 1px solid black;
+}
+
+.wprbxmas_story--story_data {
+  max-width: var(--wprbxmas_story--max_width);
+  flex-grow: 1;
+}
+
+.wprbxmas_story--story_data--author_and_title {
+  max-width: var(--wprbxmas_story--max_width);
+}
+
+.wprbxmas_story--story_data--story_desc {
+  max-width: var(--wprbxmas_story--max_width);
+  padding: 40px;
+  background: none;
+  font-size: 12px;
+}
+
+.wprbxmas_story--audio {
+  width: 100%;
+}
+
+.wprbxmas_story--audio audio {
+  background: var(--body_bg);
+}
+
+.story_author {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: var(--story_author-font_size);
+}
+
+.story_title {
+  text-align: center;
+  font-size: var(--story_title-font_size);
+  font-weight: 700;
+}
+
+.story_title_top_margin {
+  margin-top: 10px;
+}
+
+.story_title details {
+  margin: 15px 0px;
+  font-size: 1.25rem;
+}
+
+.author_pull_up {
+  margin-bottom: 0;
+}
+
+.story_desc {
+  font-size: var(--story_desc-font_size);
+}
+
+/* #endregion WPRBXMAS STORIES & SONGS */
+
+/* #region ADDITIONAL SONG-SPECIFIC STYLING */
+
+.band_desc {
+  font-size: var(--story_desc-font_size);
+}
+
+.perform_desc {
+  display: inline-block;
+  padding: 15px;
+  font-size: var(--lyrics_font_size);
+  background-color: var(--santa_red_transparent-2);
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ec5395' fill-opacity='0.32'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.lyrics {
+  display: inline-block;
+  width: 65%;
+  padding: 15px;
+  font-size: var(--lyrics_font_size) !important;
+  font-weight: 500;
+  background-color: var(--santa_red_transparent-2);
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ec5395' fill-opacity='0.32'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* #endregion ADDITIONAL SONG-SPECIFIC STYLING */
+
+/* #region WPRBXMAS STORIES & SONGS -- IMAGES */
+
+.wprbxmas_story--cassette_tape_mobile,
+img.casette_tape_mobile {
+  display: none;
+}
+
+.story_author img.social_media {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+  padding-bottom: 0px;
+  transition: all 0.25s ease-in-out;
+}
+
+.story_author img.social_media:hover {
+  border-radius: 40%;
+  padding: 2px;
+  background: var(--santa_yellow);
+}
+
+#james_dering img.social_media {
+  margin: 0px 5px;
+}
+
+.story_author .social_media_divider {
+  display: inline-block;
+  width: 5%;
+  height: 2px;
+  margin: 5px 5px;
+  background: black;
+  transform: rotate(90deg);
+}
+
+.flex_stump {
+  display: flex;
+  margin-top: 10px;
+  background-color: var(--santa_yellow-transparent);
+}
+
+img.stump {
+  display: inline-block;
+  align-self: center;
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.stump::after {
+  content: "This entry is a stump!  Please e-mail elves @ marathon dot christmas if you know of any social media profiles, websites, etc. associated with these WPRBXmas alums.";
+  font-size: var(--lyrics_font_size);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* #endregion WPRBXMAS STORIES & SONGS -- IMAGES */
+
+// /* #region MEDIA QUERIES */
+
+// /* #region MEDIA QUERIES - Smartphones */
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  :root {
+    --story_author-font_size: 1.55rem;
+    --story_desc-font_size: 0.95rem;
+    --story_title-font_size: 1.25rem;
+  }
+
+  main.songs h2,
+  main.stories h2 {
+    font-size: 2.25rem;
+    margin-bottom: 50px;
+  }
+
+  #marathons_past--bouncing_santa_and_introduction,
+  .wprbxmas_stories {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #marathons_past--bouncing_santa_and_introduction {
+    margin-bottom: 50px;
+  }
+
+  img#bouncing_santa--songs,
+  img#bouncing_santa--stories {
+    width: 200px;
+    height: 200px;
+  }
+
+  .wprbxmas_stories {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .scale_tape {
+    display: none;
+  }
+
+  .wprbxmas_story--cassette_tape_mobile,
+  img.casette_tape_mobile {
+    display: flex;
+  }
+
+  img.cassette_tape_mobile {
+    width: auto;
+  }
+
+  .wprbxmas_story .band_desc {
+    text-align: left;
+  }
+
+  .wprbxmas_story--story_data--story_desc {
+    padding: 10px;
+  }
+}
+/* #endregion */
