@@ -81,6 +81,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 25px;
 }
 
 #title_card--current_marathon_details h2 {
@@ -241,16 +242,29 @@ td.current_marathon_times {
   }
 }
 
-/* #endregion MEDIA QUERIES - Mobile */
+/* #endregion MEDIA QUERIES - Page & Layout Specific */
 
-@media screen and (min-width: 0px) and (max-width: 1181px) {
-  #title_card--welcome_to_marathon_christmas_and_current_marathon_container {
-    justify-content: center;
-  }
-
-  #title_card--current_marathon_details h2 {
-    margin-top: calc(5vh + 20px);
-  }
+@media screen and (min-width: 0px) and (max-width: 1240px){
+  /* These media queries trigger styling & layout changes when 
+        #title_card--current_marathon_details wraps at 1240px */
+#title_card--welcome_to_marathon_christmas_and_current_marathon_container {
+  /* Center content containers in title card. */
+  justify-content: center;
+  align-items: center;
 }
 
+  #title_card--welcome_to_marathon_christmas,
+  #title_card--current_marathon-details {
+    /* Center content in content containers. */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #title_card--current_marathon_details {
+    /* Add space between bottom of "Welcome to Marathon Christmas" container 
+        & top of "Countdown to WPRBXmas!" container. */ 
+    margin-top: 20px;
+}
+}
 /* #endregion MEDIA QUERIES -- ALL MEDIA QUERIES */
