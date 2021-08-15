@@ -125,6 +125,12 @@
   overflow: visible;
   background: var(--body_bg);
 }
+#christmas_lights--desktop .strand a:link,
+#christmas_lights--laptop .strand a:link,
+#christmas_lights--desktop .strand a:hover,
+#christmas_lights--laptop .strand a:hover {
+  background-image: none;
+} 
 
 #christmas_lights--desktop .strand a li,
 #christmas_lights--laptop .strand a li {
