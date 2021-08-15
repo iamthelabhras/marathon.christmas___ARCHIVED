@@ -8,6 +8,7 @@ footer {
 
 div#title_card--footer {
   justify-content: space-around;
+  align-items: center;
   max-width: 1500px;
   padding: 25px;
 }
@@ -59,9 +60,21 @@ div#title_card--footer audio:active {
   }
 }
 
+span#peace_on_earth {
+  margin-top: 5px;
+  font-family: "Xmas Sweater", sans-serif;
+  font-style: italic;
+}
+
 div#copyleft_and_attribution {
   justify-content: center;
   align-items: center;
+}
+
+div#copyleft_and_attribution span:nth-child(2) {
+  font-style: italic;
+  font-size: .75rem;
+  font-weight: 700;
 }
 
 img.img_copyleft {
@@ -70,12 +83,12 @@ img.img_copyleft {
   height: 25px;
 }
 
-span.copyleft {
+div#footer_links ul {
+  list-style: none;
 }
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
   footer div {
-    margin-top: 20px;
     text-align: center;
   }
 
@@ -91,4 +104,30 @@ span.copyleft {
     margin: 0 auto;
     padding-bottom: 20px;
   }
+}
+
+@media screen and (min-width: 0px) and (max-width: 985px) {
+  /* Reflow footer containers to column from 985px down. */
+div#title_card--footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span#peace_on_earth,
+div#copyleft_and_attribution span:nth-child(2) {
+  /* Add botom margin to "Peace on Earth, Goodwill to DJs" 
+      & "Made With Xmas Cheer" spans when container switches to columns. */
+  margin-bottom: 10px;
+}
+
+div#footer_links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+div#footer_links ul li {
+margin-right: 15px;
+}
+
 }
