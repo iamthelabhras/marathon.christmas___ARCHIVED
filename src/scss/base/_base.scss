@@ -16,14 +16,37 @@ body {
 
 /* #region Base Hyperlinks */
 
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-  color: var(--black);
+
+a:link
+ {
+  text-decoration: none;
+  background-image: repeating-linear-gradient(60deg, var(--santa_red), var(--santa_red) 15px, var(--off_white) 0, var(--off_white) 30px);
+  background-size:  0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  font-weight: 700;
+  color: var(--santa_red);
+  // color: var(--santa_red);
+  text-shadow: 1px 1px 1px var(--black); 
+  transition: background-size .5s ease;
 }
+
+a:visited {
+  color: var(--body_bg);
+}
+
+a:focus,
+a:hover {
+  background-image: repeating-linear-gradient(60deg, var(--santa_red), var(--santa_red) 15px, var(--off_white) 0, var(--off_white) 30px);
+  background-size:  100% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+a:active {
+  color: var(--santa_yellow);
+}
+
 
 /* @endregion */
 
