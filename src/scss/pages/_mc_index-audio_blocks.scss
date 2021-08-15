@@ -74,4 +74,18 @@
     transform: rotate(0deg);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #web_app--audio_blocks label {
+    text-align: center;
+    max-width: 45ch;
+    margin-top: 20px;
+    color: var(--santa_yellow);
+  }
+
+  #web_app--audio_blocks label textarea {
+    display: block;
+    margin: 20px auto 0px auto;
+  }
+}
 /* #endregion MEDIA QUERIES */
