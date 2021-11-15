@@ -116,6 +116,20 @@ details[open] summary ~ * {
   animation: details_open 0.5s ease-in-out;
 }
 
+details span.more_content {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: 700;
+  color: var(--santa_red);
+  transition: color ease-in-out 0.5s;
+}
+
+details[open] span.more_content {
+  color: var(--santa_white);
+}
+
 .story_title {
   text-align: center;
   font-size: var(--story_title-font_size);
