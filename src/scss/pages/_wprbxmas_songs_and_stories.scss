@@ -116,18 +116,35 @@ details[open] summary ~ * {
   animation: details_open 0.5s ease-in-out;
 }
 
+details.perform_desc:first-of-type {
+  margin-bottom: 15px;
+}
+
+details.more_content summary {
+  &::marker {
+    /* Hides togglable arrow that shows & hides remaining text in details element. */
+    content: "";
+  }
+}
+
 details span.more_content {
   display: block;
   width: 100%;
   margin-top: 10px;
   text-align: right;
+  border-bottom: 1px dotted var(--body_bg);
   font-weight: 700;
   color: var(--santa_red);
-  transition: color ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 details[open] span.more_content {
   color: var(--santa_white);
+  border-bottom: none;
+}
+
+details#savak_2019 {
+  margin-bottom: 15px;
 }
 
 .story_title {
@@ -170,8 +187,9 @@ details[open] span.more_content {
 }
 
 .lyrics {
-  display: inline-block;
-  width: 65%;
+  display: flex;
+  justify-content: center;
+  width: 85%;
   padding: 15px;
   font-size: var(--lyrics_font_size) !important;
   font-weight: 500;
@@ -218,7 +236,7 @@ img.casette_tape_mobile {
 
 .flex_stump {
   display: flex;
-  margin-top: 10px;
+  margin: 10px 0px;
   background-color: var(--santa_yellow-transparent);
 }
 
