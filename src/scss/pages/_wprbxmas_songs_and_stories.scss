@@ -85,16 +85,13 @@ img#bouncing_santa--stories {
 }
 
 .wprbxmas_story--story_data {
-  max-width: var(--wprbxmas_story--max_width);
   flex-grow: 1;
 }
 
 .wprbxmas_story--story_data--author_and_title {
-  max-width: var(--wprbxmas_story--max_width);
 }
 
 .wprbxmas_story--story_data--story_desc {
-  max-width: var(--wprbxmas_story--max_width);
   padding: 40px;
   background: none;
   font-size: 12px;
@@ -112,6 +109,11 @@ img#bouncing_santa--stories {
   text-align: center;
   margin-bottom: 15px;
   font-size: var(--story_author-font_size);
+}
+
+details[open] summary ~ * {
+  margin-top: 20px;
+  animation: details_open 0.5s ease-in-out;
 }
 
 .story_title {
@@ -224,9 +226,24 @@ img.stump {
 
 /* #endregion WPRBXMAS STORIES & SONGS -- IMAGES */
 
-// /* #region MEDIA QUERIES */
+/* #region ANIMATIONS */
 
-// /* #region MEDIA QUERIES - Smartphones */
+@keyframes details_open {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+/* #endregion ANIMATIONS */
+
+/* #region MEDIA QUERIES */
+
+/* #region MEDIA QUERIES - Smartphones */
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
   :root {
@@ -283,4 +300,6 @@ img.stump {
     padding: 10px;
   }
 }
-/* #endregion */
+/* #endregion MEDIA QUERIES - Smartphones */
+
+/* #endregion MEDIA QUERIES */
