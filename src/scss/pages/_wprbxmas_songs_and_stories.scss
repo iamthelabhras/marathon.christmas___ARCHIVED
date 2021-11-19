@@ -143,6 +143,30 @@ details[open] span.more_content {
   border-bottom: none;
 }
 
+details span.more_content--collapse {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 0.85rem;
+  color: var(--santa_white);
+  transition: all ease-in-out 0.5s;
+}
+
+details span.more_content--collapse img {
+  opacity: 0;
+  margin-top: 5px;
+  transition: all ease-in-out 0.5s;
+}
+
+details[open] span.more_content--collapse {
+  margin-top: 10px;
+  color: var(--black);
+}
+
+details[open] span.more_content--collapse img {
+  opacity: 1;
+}
+
 details#savak_2019,
 details#savak_2018,
 details#roseannacarra_2015 {
