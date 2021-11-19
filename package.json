@@ -1,7 +1,7 @@
 {
   "name": "marathon_christmas_redux",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fan site dedicated to Jon Solomon's 25-hour Christmas radio show.",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
@@ -10,11 +10,11 @@
   "author": "Labhrás Mac Gabhann",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.0.0-rc.0",
     "sass": "^1.37.5"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.1"
   }
 }
