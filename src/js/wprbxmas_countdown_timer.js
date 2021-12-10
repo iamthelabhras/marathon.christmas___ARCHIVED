@@ -1,10 +1,8 @@
 // Set the date we're counting down to
-let countDownDate = new Date("Dec 24, 2021 16:00:00").getTime();
-
+let countDownDate = new Date("Dec 24, 2021 17:00:00").getTime();
 
 // Update the count down every 1 second
-let x = setInterval(function() {
-
+let x = setInterval(function () {
   // Get today's date and time
   let now = new Date().getTime();
 
@@ -18,18 +16,18 @@ let x = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-//   document.getElementById("countdown_to_wprbxmas").innerHTML = "Only " + days + " days " + hours + " hours "
-//   + minutes + " minutes " + seconds + " seconds to go " + "!";
+  //   document.getElementById("countdown_to_wprbxmas").innerHTML = "Only " + days + " days " + hours + " hours "
+  //   + minutes + " minutes " + seconds + " seconds to go " + "!";
 
-  document.getElementById("days").innerHTML = days; 
-  document.getElementById("hours").innerHTML = hours; 
-  document.getElementById("minutes").innerHTML = minutes; 
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
-
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown_to_wprbxmas").innerHTML = "It's Finally WPRBXmas!";
+    document.getElementById("countdown_to_wprbxmas").innerHTML =
+      "It's Finally WPRBXmas!";
   }
 }, 1000);
