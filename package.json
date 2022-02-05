@@ -9,12 +9,10 @@
   },
   "author": "Labhrás Mac Gabhann",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.37.5"
-  },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "parcel": "^2.0.1"
+    "parcel": "^2.0.1",
+    "sass": "^1.49.7"
   }
 }
