@@ -1,4 +1,6 @@
 #title_card--wprbxmas_submissions {
+  justify-content: center;
+  align-items: center;
 }
 
 #submissions-background_image_and_guidelines_container {
@@ -23,6 +25,7 @@
 }
 
 img#submissions_image {
+  border-radius: 10px;
 }
 
 figcaption#submissions_caption {
