@@ -37,7 +37,7 @@
 /* TITLE CARD: Site Desc & Current Marathon Details Container */
 #title_card--welcome_to_marathon_christmas_and_current_marathon_container {
   margin-top: 5vh;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 /* TITLE CARD: Welcome to Marathon Christmas Site Desc */
 
@@ -236,14 +236,14 @@ td.current_marathon_times {
 
 /* #endregion MEDIA QUERIES - Page & Layout Specific */
 
-@media screen and (min-width: 0px) and (max-width: 1240px){
+@media screen and (min-width: 0px) and (max-width: 1240px) {
   /* These media queries trigger styling & layout changes when 
         #title_card--current_marathon_details wraps at 1240px */
-#title_card--welcome_to_marathon_christmas_and_current_marathon_container {
-  /* Center content containers in title card. */
-  justify-content: center;
-  align-items: center;
-}
+  #title_card--welcome_to_marathon_christmas_and_current_marathon_container {
+    /* Center content containers in title card. */
+    justify-content: center;
+    align-items: center;
+  }
 
   #title_card--welcome_to_marathon_christmas,
   #title_card--current_marathon-details {
@@ -256,10 +256,10 @@ td.current_marathon_times {
 
   #title_card--current_marathon_details {
     /* Add space between bottom of "Welcome to Marathon Christmas" container 
-        & top of "Countdown to WPRBXmas!" container. */ 
+        & top of "Countdown to WPRBXmas!" container. */
     margin-top: 20px;
     /* Remove left margin on "Welcome to Marahton Christmas" container on wrap. */
     margin-left: 0px;
-}
+  }
 }
 /* #endregion MEDIA QUERIES -- ALL MEDIA QUERIES */
