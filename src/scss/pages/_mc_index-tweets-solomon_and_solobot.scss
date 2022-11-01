@@ -21,7 +21,7 @@ a.twitter-mention-button,
 a.twitter-follow-button {
 }
 
-a.twitter-line {
+a.twitter-timeline {
 }
 
 #title_card--jon_solomons_tweets div.wprbxmas_card--warning,
@@ -48,6 +48,7 @@ a.twitter-line {
 /* #region Jon Solomon's Tweets Card */
 
 #title_card--jon_solomons_tweets {
+  display: none;
 }
 
 #solomon_twitter_card--twitter_widgets--tweet_to_and_follow {
@@ -65,6 +66,7 @@ a.twitter-line {
 /* #region Jon Solobot's Tweets Card */
 
 #title_card--jon_solobots_tweets {
+  display: none;
 }
 
 #solobot_twitter_card--twitter_widgets--tweet_to_and_follow {
